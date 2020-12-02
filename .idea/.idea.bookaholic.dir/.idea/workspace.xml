@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="af94d123-4114-4614-9d9e-ad66edad8d20" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/Downloads/books.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Models/book.model.js" />
+        <option value="$PROJECT_DIR$/Controllers/user.controller.js" />
+        <option value="$PROJECT_DIR$/Models/user.model.js" />
+        <option value="$PROJECT_DIR$/Routes/user.routes.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1kebOi6XfR72fvKXbTPphiRXGsI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="af94d123-4114-4614-9d9e-ad66edad8d20" name="Default Changelist" comment="" />
+      <created>1606063977807</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606063977807</updated>
+      <workItem from="1606063984770" duration="2909000" />
+      <workItem from="1606237987532" duration="13173000" />
+      <workItem from="1606330408994" duration="621000" />
+      <workItem from="1606380226221" duration="1447000" />
+      <workItem from="1606480746196" duration="1720000" />
+      <workItem from="1606676670235" duration="4250000" />
+      <workItem from="1606751942961" duration="7785000" />
+      <workItem from="1606775780529" duration="25000" />
+      <workItem from="1606775828045" duration="620000" />
+      <workItem from="1606819935634" duration="5244000" />
+      <workItem from="1606862221384" duration="2969000" />
+      <workItem from="1606906210917" duration="649000" />
+      <workItem from="1606907232491" duration="848000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1606775093072">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/-1600.0.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1606775093071" />
+  </component>
+</project>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\USER\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\USER\AppData\Local\JetBrains\Rider2020.2\javascript\typings\express\4.17.1\node_modules\@types\body-parser" t="IncludeRecursive" />
+    <e p="C:\Users\USER\AppData\Local\JetBrains\Rider2020.2\javascript\typings\express\4.17.1\node_modules\@types\connect" t="IncludeRecursive" />
+    <e p="C:\Users\USER\AppData\Local\JetBrains\Rider2020.2\javascript\typings\express\4.17.1\node_modules\@types\express" t="IncludeRecursive" />
+    <e p="C:\Users\USER\AppData\Local\JetBrains\Rider2020.2\javascript\typings\express\4.17.1\node_modules\@types\express-serve-static-core" t="IncludeRecursive" />
+    <e p="C:\Users\USER\AppData\Local\JetBrains\Rider2020.2\javascript\typings\express\4.17.1\node_modules\@types\mime" t="IncludeRecursive" />
+    <e p="C:\Users\USER\AppData\Local\JetBrains\Rider2020.2\javascript\typings\express\4.17.1\node_modules\@types\node" t="IncludeRecursive" />
+    <e p="C:\Users\USER\AppData\Local\JetBrains\Rider2020.2\javascript\typings\express\4.17.1\node_modules\@types\qs" t="IncludeRecursive" />
+    <e p="C:\Users\USER\AppData\Local\JetBrains\Rider2020.2\javascript\typings\express\4.17.1\node_modules\@types\range-parser" t="IncludeRecursive" />
+    <e p="C:\Users\USER\AppData\Local\JetBrains\Rider2020.2\javascript\typings\express\4.17.1\node_modules\@types\serve-static" t="IncludeRecursive" />
+    <e p="C:\Users\USER\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_.19.00" t="ExcludeRecursive" />
+    <e p="C:\Users\USER\Documents\bookaholic" t="IncludeFlat">
+      <e p="node_modules\bcrypt" t="IncludeRecursive" />
+      <e p="node_modules\body-parser" t="IncludeRecursive" />
+      <e p="node_modules\crypto" t="IncludeRecursive" />
+      <e p="node_modules\denque" t="IncludeRecursive" />
+      <e p="node_modules\express" t="IncludeRecursive" />
+      <e p="node_modules\iconv-lite" t="IncludeRecursive" />
+      <e p="node_modules\json" t="IncludeRecursive" />
+      <e p="node_modules\mysql2" t="IncludeRecursive" />
+      <e p="node_modules\nodemailer" t="IncludeRecursive" />
+      <e p="node_modules\unhash" t="IncludeRecursive" />
+    </e>
+  </component>
+</project>
