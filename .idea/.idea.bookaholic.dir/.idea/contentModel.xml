@@ -20,6 +20,7 @@
       <e p="node_modules\express" t="IncludeRecursive" />
       <e p="node_modules\iconv-lite" t="IncludeRecursive" />
       <e p="node_modules\json" t="IncludeRecursive" />
+      <e p="node_modules\multer" t="IncludeRecursive" />
       <e p="node_modules\mysql2" t="IncludeRecursive" />
       <e p="node_modules\nodemailer" t="IncludeRecursive" />
       <e p="node_modules\unhash" t="IncludeRecursive" />

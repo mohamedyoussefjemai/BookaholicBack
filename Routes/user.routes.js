@@ -54,4 +54,10 @@ router.put('/update-user-email/:id', userController.updateEmailProfile);
 router.put('/update-user-address/:id', userController.updateAddress);
 // Update a user username with id
 router.put('/update-user-username/:id', userController.updateUsername);
+//update all profile
+router.put('/update-user-all/:id', userController.updateAll);
+// Update a user username with id
+router.put('/update-user-image/:id', userController.updateImage);
+
 module.exports = router
+

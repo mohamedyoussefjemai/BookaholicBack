@@ -103,6 +103,9 @@ exports.findByEmail = function (req, res) {
         res.json(user);
     });
 };
+
+
+
 exports.updatePhone = function (req, res) {
         user.updatePhone(req.params.id, req.body.phone , function (err, user) {
             if (err)
@@ -134,5 +137,27 @@ exports.updateUsername = function (req, res) {
             res.send(err);
         res.json({error: false, message: 'username successfully updated'});
     });
+};
+exports.updateAll = function (req, res) {
+    user.updateAll(req.params.id, req.body.email,req.body.phone,req.body.address, function (err, user) {
+        if (err)
+            res.send(err);
+        res.json({error: false, message: 'update all successfully updated'});
+    });
 
+};
+exports.VerifEmail = function (req, res) {
+    user.VerifEmail(req.params.email, function (err, result) {
+        if (err)
+            res.send(err);
+        res.json(result);
+
+    });
+};
+exports.updateImage = function (req, res) {
+    user.updateImage(req.params.id, req.body.image , function (err, user) {
+        if (err)
+            res.send(err);
+        res.json({error: false, message: 'image successfully updated'});
+    });
 };

@@ -15,7 +15,7 @@ const Category = Object.freeze({
 	artmusiccinema: 'art music & cinema',
 	humor: 'humor',
 	policethrillers: 'police & thrillers',
-	Religionspirituality: 'Religion and spirituality',
+	Religionspirituality: 'Religion & spirituality',
 	school: 'school',
 	sportleisure: 'sport & leisure',
 	theater: 'theater',
@@ -46,34 +46,7 @@ var book = function (book) {
 	this.username = book.username;
 
 };
-book.create = function (newbook, result) {
-	if (!Object.values(Category).includes(newbook.category)) {
-		console.log('error category');
-		result('error category not found', null);
 
-	} else if (!Object.values(Etat).includes(newbook.status)) {
-		console.log('error status');
-		result('error status', null);
-
-	}
-	else if (!Object.values(Language).includes(newbook.language)) {
-		console.log('error language');
-		result('error language', null);
-
-	}
-	else {
-		dbConn.query("INSERT INTO books set ?", newbook, function (err, res) {
-			if (err) {
-				console.log("error: ", err);
-				result(err, null);
-			}
-			else {
-				console.log(res.insertId);
-				result(null, res.insertId);
-			}
-		});}
-	
-};
 book.findById = function (id, result) {
 	dbConn.query("Select * from books where id = ? ", id, function (err, res) {
 		if (err) {
@@ -86,7 +59,7 @@ book.findById = function (id, result) {
 	});
 };
 book.findAll = function (result) {
-	dbConn.query("Select * from books where visible = 1", function (err, res) {
+	dbConn.query("Select * from books where visible = 1 order by id desc ", function (err, res) {
 		if (err) {
 			console.log("error: ", err);
 			result(null, err);
@@ -98,7 +71,7 @@ book.findAll = function (result) {
 	});
 };
 book.update = function (id, book, result) {
-	dbConn.query("UPDATE books SET title=?,author=?,price=?,category=?,visible=?,status=?,image=?,user=?,language=? username=? WHERE id = ?", [book.title, book.author, book.price, book.category, book.visible, book.status, book.image, book.user,book.language, book.username, id], function (err, res) {
+	dbConn.query("UPDATE books SET title=?,author=?,price=?,category=?,visible=?,status=?,image=?,user=?, language=?, username=? WHERE id = ?", [book.title, book.author, book.price, book.category, book.visible, book.status, book.image, book.user,book.language, book.username, id], function (err, res) {
 		if (err) {
 			console.log("error: ", err);
 			result(null, err);
@@ -158,5 +131,53 @@ book.findPost = function (id, result) {
 		}
 	});
 };
+book.createBook = function (newbook, result) {
+	if (!Object.values(Category).includes(newbook.category)) {
+		console.log('error category');
+		result('error category not found', null);
 
+	} else if (!Object.values(Etat).includes(newbook.status)) {
+		console.log('error status');
+		result('error status', null);
+
+	}
+	else if (!Object.values(Language).includes(newbook.language)) {
+		console.log('error language');
+		result('error language', null);
+
+	}
+	else {
+		dbConn.query("INSERT INTO books set ? ", newbook, function (err, res) {
+			if (err) {
+				console.log("error: ", err);
+				result(err, null);
+			}
+			else {
+				console.log(res);
+				result(null, res);
+			}
+		});}
+
+};
+book.updateVisible = function (id, price, result) {
+	dbConn.query("UPDATE books SET price=?,visible=1 WHERE id = ?", [price, id], function (err, res) {
+		if (err) {
+			console.log("error: ", err);
+			result(null, err);
+		} else {
+			result(null, res);
+		}
+	});
+};
+book.updateInvisible = function (id, result) {
+	dbConn.query("UPDATE books SET visible = 0 WHERE id = ?", [id], function (err, res) {
+		if (err) {
+			console.log("error: ", err);
+			result(null, err);
+		} else {
+			result(null, res);
+		}
+	});
+};
 module.exports = book;
+

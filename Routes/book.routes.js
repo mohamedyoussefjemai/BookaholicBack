@@ -5,7 +5,7 @@ const book = require('../models/book.model');
 // Retrieve all books
 router.get('/', bookController.findAll);
 // Create a new book
-router.post('/add-book', bookController.create);
+router.post('/add-book', bookController.createBook);
 // Retrieve a single book with id
 router.get('/read-book/:id', bookController.findById);
 // Update a book with id
@@ -18,4 +18,8 @@ router.get('/read-book-category/:cat', bookController.findBycat);
 router.get('/lib-book/:id', bookController.findLib);
 //select Post
 router.get('/post-book/:id', bookController.findPost);
+// Update a book visible with id
+router.put('/update-book-visible/:id', bookController.updateVisible);
+// Update a book visible with id
+router.put('/update-book-invisible/:id', bookController.updateInvisible);
 module.exports = router

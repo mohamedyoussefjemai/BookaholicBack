@@ -1,11 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="af94d123-4114-4614-9d9e-ad66edad8d20" name="Default Changelist" comment="" />
+    <list default="true" id="af94d123-4114-4614-9d9e-ad66edad8d20" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Controllers/favoris.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/favoris.model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Routes/favoris.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.bookaholic.dir/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.bookaholic.dir/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.bookaholic.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.bookaholic.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/book.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/book.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/user.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/book.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/Models/book.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/user.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/Models/user.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Routes/book.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/Routes/book.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Routes/user.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/Routes/user.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/Downloads/books.cs" root0="SKIP_HIGHLIGHTING" />
@@ -13,10 +40,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Models/book.model.js" />
+        <option value="$PROJECT_DIR$/Routes/favoris.routes.js" />
+        <option value="$PROJECT_DIR$/Controllers/favoris.controller.js" />
+        <option value="$PROJECT_DIR$/Routes/book.routes.js" />
+        <option value="$PROJECT_DIR$/Controllers/book.controller.js" />
+        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/Controllers/user.controller.js" />
         <option value="$PROJECT_DIR$/Models/user.model.js" />
         <option value="$PROJECT_DIR$/Routes/user.routes.js" />
+        <option value="$PROJECT_DIR$/Models/book.model.js" />
+        <option value="$PROJECT_DIR$/Models/favoris.model.js" />
       </list>
     </option>
   </component>
@@ -51,7 +84,29 @@
       <workItem from="1606819935634" duration="5244000" />
       <workItem from="1606862221384" duration="2969000" />
       <workItem from="1606906210917" duration="649000" />
-      <workItem from="1606907232491" duration="848000" />
+      <workItem from="1606907232491" duration="5025000" />
+      <workItem from="1606936749291" duration="2728000" />
+      <workItem from="1606981016141" duration="2047000" />
+      <workItem from="1607008848197" duration="733000" />
+      <workItem from="1607095943198" duration="5478000" />
+      <workItem from="1607112424765" duration="879000" />
+      <workItem from="1607168056555" duration="590000" />
+      <workItem from="1607191945642" duration="3093000" />
+      <workItem from="1607249063932" duration="821000" />
+      <workItem from="1607273629320" duration="4035000" />
+      <workItem from="1607333947965" duration="18870000" />
+      <workItem from="1607430602177" duration="1227000" />
+      <workItem from="1607508705277" duration="7120000" />
+      <workItem from="1607534610749" duration="2655000" />
+      <workItem from="1607552368541" duration="2379000" />
+      <workItem from="1607596618234" duration="7580000" />
+      <workItem from="1607712891375" duration="9052000" />
+      <workItem from="1607763807968" duration="776000" />
+      <workItem from="1607857166095" duration="5447000" />
+      <workItem from="1607893363970" duration="6790000" />
+      <workItem from="1607947602261" duration="8239000" />
+      <workItem from="1608040268371" duration="6642000" />
+      <workItem from="1608118480641" duration="4360000" />
     </task>
     <servers />
   </component>
@@ -60,13 +115,29 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="498" height="446" key="SwitcherDM" timestamp="1606775093072">
+    <state x="649" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607096940530">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/-1600.0.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1606775093071" />
+    <state x="649" y="322" key="#com.intellij.fileTypes.FileTypeChooser/-1600.0.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607096940530" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1607530783806">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/-1600.0.1600.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607530783806" />
   </component>
 </project>
