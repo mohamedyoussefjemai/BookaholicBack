@@ -61,6 +61,56 @@ app.post(
     });
 app.use("/get/image", express.static("uploads/images"))
 
+
+///// multer ios
+const storage2 = multer.diskStorage({
+    destination: (req, file, cb) => {
+        cb(null, 'uploads/images');
+    },
+    filename: (req, file, cb) => {
+        console.log(file);
+        cb(null, file.originalname);
+    }
+});
+const fileFilter = (req, file, cb) => {
+    if (file.mimetype == 'image/jpeg' || file.mimetype == 'image/png') {
+        cb(null, true);
+    } else {
+        cb(null, false);
+    }
+}
+const upload2 = multer({ storage: storage2, fileFilter: fileFilter });
+//Upload route
+app.post(
+    "/upload/ios",
+    multer({
+        storage: storage2
+    }).single('upload'), function(req, res) {
+        // console.log(req.file);
+        // console.log(req.body);
+        //res.redirect("/uploads/" + req.file.filename);
+        console.log(req.file.filename);
+        return res.status(200).end();
+    });
+
+app.get('/uploads/:upload', function (req, res){
+    file = req.params.upload;
+    console.log(req.params.upload);
+    var img = fs.readFileSync(__dirname + "/uploads/images/" + file);
+    res.writeHead(200, {'Content-Type': 'image/png' });
+    res.end(img, 'binary');
+
+});
+
+
+
+
+
+
+
+
+
+
 //add book with image
 
 /*

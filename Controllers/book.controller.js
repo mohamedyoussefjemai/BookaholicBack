@@ -55,6 +55,39 @@ exports.delete = function (req, res) {
 };
 
 exports.findBycat = function (req, res) {
+        switch (req.params.cat) {
+            case "romance":
+                req.params.cat = "romance & new adult";
+                break;
+            case "mangas":
+                req.params.cat = "comic & mangas";
+                break;
+            case "devper":
+                req.params.cat = "Personal development";
+                break;
+            case "health":
+                req.params.cat = "Health & cooking";
+                break;
+            case "social":
+                req.params.cat = "social Sciences";
+                break;
+            case "art":
+                req.params.cat = "art music & cinema";
+                break;
+            case "police":
+                req.params.cat = "police & thrillers";
+                break;
+            case "religion":
+                req.params.cat = "Religion & spirituality";
+                break;
+            case "sport":
+                req.params.cat = "sport & leisure";
+                break;
+            case "travel":
+                req.params.cat = "tourism & travel";
+                break;
+        }
+    
     book.findBycat(req.params.cat, function (err, book) {
         if (err)
             res.send(err);

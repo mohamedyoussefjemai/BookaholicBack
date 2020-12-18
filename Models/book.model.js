@@ -108,7 +108,7 @@ book.findBycat = function (cat, result) {
 };
 
 book.findLib = function (id, result) {
-	dbConn.query("Select * from books where user =(select id from users where id = ?)  ", id, function (err, res) {
+	dbConn.query("Select * from books where user =(select id from users where id = ?) order by id desc ", id, function (err, res) {
 		if (err) {
 			console.log("error: ", err);
 			result(err, null);
@@ -121,7 +121,7 @@ book.findLib = function (id, result) {
 
 
 book.findPost = function (id, result) {
-	dbConn.query("Select * from books where user =(select id from users where id = ?) AND visible = 1  ", id, function (err, res) {
+	dbConn.query("Select * from books where user =(select id from users where id = ?) AND visible = 1  order by id desc ", id, function (err, res) {
 		if (err) {
 			console.log("error: ", err);
 			result(err, null);

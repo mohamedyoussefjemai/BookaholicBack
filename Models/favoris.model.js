@@ -76,7 +76,7 @@ favoris.create = function (newfavoris ,image, result) {
 	
 };
 favoris.findById = function (id, result) {
-	dbConn.query("Select * from favoris where user = ? ", id, function (err, res) {
+	dbConn.query("Select * from favoris where user = ? order by id desc ", id, function (err, res) {
 		if (err) {
 			console.log("error: ", err);
 			result(err, null);
@@ -87,7 +87,7 @@ favoris.findById = function (id, result) {
 	});
 };
 favoris.findAll = function (result) {
-	dbConn.query("Select * from favoris where visible = 1", function (err, res) {
+	dbConn.query("Select * from favoris where visible = 1 order by id desc", function (err, res) {
 		if (err) {
 			console.log("error: ", err);
 			result(null, err);
