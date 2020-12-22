@@ -24,6 +24,7 @@
       <e p="node_modules\mysql2" t="IncludeRecursive" />
       <e p="node_modules\nodemailer" t="IncludeRecursive" />
       <e p="node_modules\unhash" t="IncludeRecursive" />
+      <e p="node_modules\websocket" t="IncludeRecursive" />
     </e>
   </component>
 </project>

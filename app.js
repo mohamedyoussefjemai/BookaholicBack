@@ -102,32 +102,38 @@ app.get('/uploads/:upload', function (req, res){
 
 });
 
+const SocketServer = require('websocket').server
+const http = require('http')
 
+const server = http.createServer((req,res) => {})
 
-
-
-
-
-
-
-
-//add book with image
-
-/*
-app.post('/books/add-book-img',upload.single('image'),(req,res) => {
-	let body = req.body;
-	let imageURL=`${req.file.filename}`
-	var sql = "INSERT INTO `books` (`title`,`author`,`price`,`category`,`visible`,`status`,`image`,`user`,`language`,`username`) VALUES (?,?,?,?,?,?,?,?,?,?)"
-
-	db.query(sql,[body.title,body.author,body.price,body.category,body.visible,body.status,imageURL,body.user,body.language,body.username],
-		(err,rows,fields)=>{
-			if (!err)
-				res.send("Inserted Book "+rows.insertId)
-			else
-				console.log(err);
-		})
+server.listen(3001,() => {
+    console.log("Listening to websocket too.....")
 })
-*/
+
+wsServer = new SocketServer({httpServer: server})
+
+const connections = []
+
+wsServer.on('request',(req) => {
+    const connection = req.accept()
+    console.log("new connection")
+    connections.push(connection)
+    
+    connection.on('message',(mes) => {
+        connections.forEach(element => {
+            if(element != connection)
+                element.sendUTF(mes.utf8Data)
+        })
+    })
+    
+    connection.on('close',(resCode, des) => {
+        console.log("connection closed")
+        connections.splice(connections.indexOf(connection),1)
+    })
+    
+})
+
 
 
 //get id with email and username
