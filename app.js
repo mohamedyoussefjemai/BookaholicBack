@@ -106,14 +106,20 @@ const SocketServer = require('websocket').server
 const http = require('http')
 
 const server = http.createServer((req,res) => {})
+const server2 = http.createServer((req,res) => {})
 
 server.listen(3001,() => {
     console.log("Listening to websocket too.....")
 })
+server2.listen(3002,() => {
+    console.log("Listening to websocket too.....")
+})
 
 wsServer = new SocketServer({httpServer: server})
+wsServer2 = new SocketServer({httpServer: server2})
 
 const connections = []
+const connections2 = []
 
 wsServer.on('request',(req) => {
     const connection = req.accept()
@@ -125,6 +131,8 @@ wsServer.on('request',(req) => {
             if(element != connection)
                 element.sendUTF(mes.utf8Data)
         })
+      //  connection.broadcast.emit("message",mes);
+        
     })
     
     connection.on('close',(resCode, des) => {
@@ -133,7 +141,26 @@ wsServer.on('request',(req) => {
     })
     
 })
+wsServer2.on('request',(req) => {
+    const connection2 = req.accept()
+    console.log("new connection2")
+    connections2.push(connection2)
 
+    connection2.on('message',(mes) => {
+        connections2.forEach(element => {
+            if(element != connection2)
+                element.sendUTF(mes.utf8Data)
+        })
+        //  connection.broadcast.emit("message",mes);
+
+    })
+
+    connection2.on('close',(resCode, des) => {
+        console.log("connection closed")
+        connections.splice(connections2.indexOf(connection2),1)
+    })
+
+})
 
 
 //get id with email and username
