@@ -52,6 +52,8 @@ router.put('/update-user-phone/:id', userController.updatePhone);
 router.put('/update-user-email/:id', userController.updateEmailProfile);
 // Update a user address with id
 router.put('/update-user-address/:id', userController.updateAddress);
+// Update a user messenger with id
+router.put('/update-user-messenger/:id', userController.updateMessenger);
 // Update a user username with id
 router.put('/update-user-username/:id', userController.updateUsername);
 //update all profile

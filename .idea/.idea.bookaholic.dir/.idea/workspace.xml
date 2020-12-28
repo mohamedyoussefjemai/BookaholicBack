@@ -12,8 +12,11 @@
   <component name="ChangeListManager">
     <list default="true" id="af94d123-4114-4614-9d9e-ad66edad8d20" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/Controllers/favoris.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controllers/requests.controller.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Models/favoris.model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/requests.model.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Routes/favoris.routes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Routes/requests.routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.bookaholic.dir/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.bookaholic.dir/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.bookaholic.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.bookaholic.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/book.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/book.controller.js" afterDir="false" />
@@ -43,13 +46,16 @@
         <option value="$PROJECT_DIR$/Routes/favoris.routes.js" />
         <option value="$PROJECT_DIR$/Controllers/favoris.controller.js" />
         <option value="$PROJECT_DIR$/Routes/book.routes.js" />
-        <option value="$PROJECT_DIR$/Controllers/user.controller.js" />
-        <option value="$PROJECT_DIR$/Models/user.model.js" />
-        <option value="$PROJECT_DIR$/Routes/user.routes.js" />
         <option value="$PROJECT_DIR$/Controllers/book.controller.js" />
         <option value="$PROJECT_DIR$/Models/favoris.model.js" />
         <option value="$PROJECT_DIR$/Models/book.model.js" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/Controllers/requests.controller.js" />
+        <option value="$PROJECT_DIR$/Routes/requests.routes.js" />
+        <option value="$PROJECT_DIR$/Models/user.model.js" />
+        <option value="$PROJECT_DIR$/Controllers/user.controller.js" />
+        <option value="$PROJECT_DIR$/Routes/user.routes.js" />
+        <option value="$PROJECT_DIR$/Models/requests.model.js" />
       </list>
     </option>
   </component>
@@ -115,7 +121,9 @@
       <workItem from="1608624795237" duration="276000" />
       <workItem from="1608677645656" duration="1873000" />
       <workItem from="1608716396848" duration="664000" />
-      <workItem from="1608893559714" duration="6208000" />
+      <workItem from="1608893559714" duration="15197000" />
+      <workItem from="1608977544367" duration="21381000" />
+      <workItem from="1609147005549" duration="8864000" />
     </task>
     <servers />
   </component>

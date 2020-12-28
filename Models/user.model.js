@@ -17,6 +17,8 @@ var user = function (user) {
     this.sale = user.sale;
     this.trade = user.trade;
     this.image = user.image;
+    this.messenger = user.messenger;
+
 };
 user.create = function (newUser, result) {
     dbConn.query("INSERT INTO users set ?", newUser, function (err, res) {
@@ -148,6 +150,18 @@ user.updateAddress = function (id, address, result) {
         }
     });
 };
+
+user.updateMessenger = function (id, messenger, result) {
+    dbConn.query("UPDATE users SET messenger=? WHERE id = ?", [messenger, id], function (err, res) {
+        if (err) {
+            console.log("error: ", err);
+            result(null, err);
+        } else {
+            result(null, res);
+        }
+    });
+};
+
 user.updateUsername = function (id, username, result) {
     dbConn.query("UPDATE users SET username=? WHERE id = ?", [username, id], function (err, res) {
         if (err) {
