@@ -162,15 +162,50 @@ user.updateMessenger = function (id, messenger, result) {
     });
 };
 
-user.updateUsername = function (id, username, result) {
-    dbConn.query("UPDATE users SET username=? WHERE id = ?", [username, id], function (err, res) {
+user.updateUsername = function (id, username, oldUsername, result) {
+    dbConn.query("UPDATE users SET username = ? WHERE id = ?", [username, id], function (err, res) {
         if (err) {
             console.log("error: ", err);
             result(null, err);
-        } else {
+        } 
+    });
+    
+    console.log("update username books")
+    dbConn.query("UPDATE books SET username = ? WHERE username = ?", [username, oldUsername], function (err, res) {
+        if (err) {
+            console.log("error: ", err);
+            result(null, err);
+        }
+    });
+    console.log("update username request sender")
+    
+    dbConn.query("UPDATE requests SET sender = ? WHERE sender = ?", [username, oldUsername], function (err, res) {
+        if (err) {
+            console.log("error: ", err);
+            result(null, err);
+        }
+    });
+    console.log("update username request receiver")
+
+    dbConn.query("UPDATE requests SET receiver = ? WHERE receiver = ?", [username, oldUsername], function (err, res) {
+        if (err) {
+            console.log("error: ", err);
+            result(null, err);
+        }
+    });
+
+
+    console.log("update username favoris")
+    dbConn.query("UPDATE favoris SET username = ? WHERE username = ?", [username, oldUsername], function (err, res) {
+        if (err) {
+            console.log("error: ", err);
+            result(null, err);
+        }else {
             result(null, res);
         }
     });
+
+
 };
 user.updateAll = function (id, email, phone, address, result) {
     dbConn.query("UPDATE users SET email=? ,phone=?,address=? WHERE id = ?", [email, phone, address, id], function (err, res) {

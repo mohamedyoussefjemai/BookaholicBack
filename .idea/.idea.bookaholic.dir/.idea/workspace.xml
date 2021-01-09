@@ -52,10 +52,10 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/Controllers/requests.controller.js" />
         <option value="$PROJECT_DIR$/Routes/requests.routes.js" />
-        <option value="$PROJECT_DIR$/Models/user.model.js" />
-        <option value="$PROJECT_DIR$/Controllers/user.controller.js" />
         <option value="$PROJECT_DIR$/Routes/user.routes.js" />
         <option value="$PROJECT_DIR$/Models/requests.model.js" />
+        <option value="$PROJECT_DIR$/Controllers/user.controller.js" />
+        <option value="$PROJECT_DIR$/Models/user.model.js" />
       </list>
     </option>
   </component>
@@ -123,7 +123,9 @@
       <workItem from="1608716396848" duration="664000" />
       <workItem from="1608893559714" duration="15197000" />
       <workItem from="1608977544367" duration="21381000" />
-      <workItem from="1609147005549" duration="8864000" />
+      <workItem from="1609147005549" duration="9513000" />
+      <workItem from="1609671723538" duration="2440000" />
+      <workItem from="1610199509663" duration="2597000" />
     </task>
     <servers />
   </component>

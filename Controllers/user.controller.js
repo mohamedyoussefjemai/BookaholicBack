@@ -142,7 +142,7 @@ exports.updateMessenger = function (req, res) {
 };
 
 exports.updateUsername = function (req, res) {
-    user.updateUsername(req.params.id, req.body.username , function (err, user) {
+    user.updateUsername(req.params.id, req.body.username, req.body.oldUsername , function (err, user) {
         if (err)
             res.send(err);
         res.json({error: false, message: 'username successfully updated'});
