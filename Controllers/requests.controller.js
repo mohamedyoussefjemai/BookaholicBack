@@ -85,3 +85,10 @@ exports.updateRejectSale = function (req, res) {
     });
 
 };
+exports.DeleteTrade = function (req, res) {
+    requests.DeleteTrade(req.params.id, function (err, favoris) {
+        if (err)
+            res.send(err);
+        res.json({ error: false, message: 'trade successfully deleted' });
+    });
+};

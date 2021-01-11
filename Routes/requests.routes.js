@@ -21,4 +21,6 @@ router.get('/read-sale-received/:username', RequestsController.findReceiverSale)
 router.put('/accept-sale-request/:id', RequestsController.updateAcceptSale);
 // set reject sale
 router.put('/refuse-sale-request/:id', RequestsController.updateRejectSale);
+// Delete trade sended
+router.delete('/delete-trade-request/:id', RequestsController.DeleteTrade);
 module.exports = router
